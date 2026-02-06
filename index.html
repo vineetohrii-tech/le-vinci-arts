@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Vinci Arte — Hand-Finished Resin Statues</title>
+  <meta name="description" content="Museum-inspired, hand-finished resin statues. Custom sizes, premium finishes, and made-to-order pieces." />
+  <style>
+    :root{
+      --bg:#0b0d10; --card:#12161c; --text:#e9eef6; --muted:#a7b0bd;
+      --line:#212834; --accent:#d8b35a; --accent2:#7a5cff;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1000px 600px at 20% -10%, rgba(216,179,90,.15), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(122,92,255,.12), transparent 55%), var(--bg); color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,13,16,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+    .dot{width:10px;height:10px;border-radius:99px;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+    .links{display:flex;flex-wrap:wrap;gap:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));}
+    .btn.primary{border-color:rgba(216,179,90,.35);background:linear-gradient(180deg, rgba(216,179,90,.22), rgba(216,179,90,.08));}
+    .hero{padding:44px 0 24px}
+    .grid{display:grid;gap:18px}
+    @media (min-width:900px){.grid.heroGrid{grid-template-columns:1.1fr .9fr;align-items:start}}
+    h1{margin:0 0 12px;font-size:clamp(30px,4vw,48px);line-height:1.05}
+    .sub{color:var(--muted);font-size:16px;line-height:1.55;margin:0 0 18px}
+    .pillRow{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+    .pill{font-size:13px;color:var(--muted);border:1px solid var(--line);padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.03)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));border:1px solid var(--line);border-radius:16px;padding:16px}
+    .stat{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+    .stat:last-child{border-bottom:none}
+    .stat b{font-weight:700}
+    .section{padding:28px 0}
+    .section h2{margin:0 0 12px;font-size:24px}
+    .muted{color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (min-width:900px){.gallery{grid-template-columns:repeat(4,1fr)}}
+    .ph{aspect-ratio:1/1;border-radius:14px;border:1px dashed rgba(233,238,246,.22);background:rgba(255,255,255,.03);
+      display:flex;align-items:center;justify-content:center;color:rgba(233,238,246,.55);font-size:13px;text-align:center;padding:10px}
+    .cols{display:grid;gap:14px}
+    @media (min-width:900px){.cols{grid-template-columns:1fr 1fr}}
+    label{display:block;font-size:13px;color:var(--muted);margin:8px 0 6px}
+    input,select,textarea{width:100%;padding:12px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(0,0,0,.25);color:var(--text)}
+    textarea{min-height:110px;resize:vertical}
+    footer{padding:20px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    .note{font-size:12px;color:rgba(233,238,246,.62)}
+    .priceRow{display:grid;gap:10px}
+    @media (min-width:900px){.priceRow{grid-template-columns:repeat(3,1fr)}}
+    .tag{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid rgba(216,179,90,.35);color:rgba(216,179,90,.95);background:rgba(216,179,90,.08)}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><span class="dot"></span> Le Vinci Arte</div>
+      <nav class="links">
+        <a class="btn" href="#gallery">Gallery</a>
+        <a class="btn" href="#pricing">Pricing</a>
+        <a class="btn" href="#process">Process</a>
+        <a class="btn" href="#faq">FAQ</a>
+        <a class="btn primary" href="#order">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="grid heroGrid">
+        <div>
+          <h1>Museum-inspired statues, hand-finished to feel like stone.</h1>
+          <p class="sub">
+            Premium resin pieces with sculpted detail, clean joints, and high-end finishes
+            (black &amp; gold patina, ivory stonewash, marble look). Made-to-order.
+          </p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" href="#order">Request a quote</a>
+            <a class="btn" href="#gallery">See the gallery</a>
+          </div>
+
+          <div class="pillRow">
+            <span class="pill">Custom sizes</span>
+            <span class="pill">Hand-finished paint</span>
+            <span class="pill">Secure packaging</span>
+            <span class="pill">Worldwide shipping (quote)</span>
+          </div>
+        </div>
+
+        <aside class="card">
+          <div class="tag">Quick info</div>
+          <div class="stat"><span class="muted">Lead time</span><b>3–10 days</b></div>
+          <div class="stat"><span class="muted">Finishes</span><b>Black/Gold • Ivory • Marble</b></div>
+          <div class="stat"><span class="muted">Material</span><b>UV resin + reinforcement</b></div>
+          <div class="stat"><span class="muted">Custom</span><b>Yes (size, colorway, base)</b></div>
+          <p class="note" style="margin:10px 0 0;">Tip: Replace the placeholders in the gallery with your own photos.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p class="muted">Drop your photos here (replace placeholders). Keep backgrounds dark for a premium look.</p>
+      <div class="gallery">
+        <div class="ph">Photo 1<br/>Hero shot</div>
+        <div class="ph">Photo 2<br/>Close-up detail</div>
+        <div class="ph">Photo 3<br/>Side profile</div>
+        <div class="ph">Photo 4<br/>Size reference</div>
+        <div class="ph">Photo 5<br/>Finish variant</div>
+        <div class="ph">Photo 6<br/>Base detail</div>
+        <div class="ph">Photo 7<br/>Packaging</div>
+        <div class="ph">Photo 8<br/>Behind-the-scenes</div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <p class="muted">Simple tiers. Final quote depends on size, finish, and shipping.</p>
+
+      <div class="priceRow">
+        <div class="card">
+          <b>12–13 inch</b>
+          <p class="muted" style="margin:8px 0;">Studio piece / desk display</p>
+          <h3 style="margin:0;">From $___</h3>
+          <p class="note">Includes base + premium finish</p>
+        </div>
+        <div class="card">
+          <b>18 inch</b>
+          <p class="muted" style="margin:8px 0;">Collector size / statement piece</p>
+          <h3 style="margin:0;">From $___</h3>
+          <p class="note">Reinforced joins recommended</p>
+        </div>
+        <div class="card">
+          <b>20 inch</b>
+          <p class="muted" style="margin:8px 0;">Flagship / centerpiece</p>
+          <h3 style="margin:0;">From $___</h3>
+          <p class="note">Custom crate/packing option</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <h2>Process</h2>
+      <div class="cols">
+        <div class="card">
+          <b>1) Print &amp; Prep</b>
+          <p class="muted">Clean seams, align parts, reinforce critical joints.</p>
+          <b>2) Prime</b>
+          <p class="muted">Even base coat for smooth paint adhesion.</p>
+        </div>
+        <div class="card">
+          <b>3) Finish</b>
+          <p class="muted">Hand-painted: patina, stonewash, marble effect.</p>
+          <b>4) Seal &amp; Ship</b>
+          <p class="muted">Protective clear coat + secure packaging.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="cols">
+        <div class="card">
+          <b>Do you do custom commissions?</b>
+          <p class="muted">Yes — size, finish, and base can be customized.</p>
+
+          <b>How do I order?</b>
+          <p class="muted">Send a quote request below with size + finish + location.</p>
+        </div>
+        <div class="card">
+          <b>Shipping?</b>
+          <p class="muted">Shipping is quoted based on destination and packaging choice.</p>
+
+          <b>Care instructions?</b>
+          <p class="muted">Keep dry, avoid direct heat, dust with a soft brush.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section">
+      <h2>Request a quote</h2>
+      <p class="muted">This form uses your email app (simple + free). Edit the email address below.</p>
+
+      <div class="card">
+        <form onsubmit="return sendEmail(event)">
+          <div class="cols">
+            <div>
+              <label>Your name</label>
+              <input id="name" required placeholder="Your name" />
+            </div>
+            <div>
+              <label>Email</label>
+              <input id="email" type="email" required placeholder="you@email.com" />
+            </div>
+          </div>
+
+          <div class="cols">
+            <div>
+              <label>Size</label>
+              <select id="size" required>
+                <option value="12–13 inch">12–13 inch</option>
+                <option value="18 inch">18 inch</option>
+                <option value="20 inch">20 inch</option>
+                <option value="Custom">Custom</option>
+              </select>
+            </div>
+            <div>
+              <label>Finish</label>
+              <select id="finish" required>
+                <option value="Black & Gold Patina">Black & Gold Patina</option>
+                <option value="Ivory Stonewash">Ivory Stonewash</option>
+                <option value="Marble Look">Marble Look</option>
+                <option value="Custom">Custom</option>
+              </select>
+            </div>
+          </div>
+
+          <label>Delivery city/country</label>
+          <input id="location" required placeholder="e.g., Montreal, Canada" />
+
+          <label>Notes</label>
+          <textarea id="notes" placeholder="Tell me what statue, any details, and your deadline (if any)."></textarea>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <button class="btn primary" type="submit">Send quote request</button>
+            <a class="btn" href="#gallery">Add photos first</a>
+          </div>
+
+          <p class="note" style="margin-top:10px;">
+            Replace <b>YOUR_EMAIL_HERE</b> in the script below with your real email.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0;">
+        © <span id="year"></span> Le Vinci Arte • Instagram: @YOURHANDLE • Contact: YOUR_EMAIL_HERE
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function sendEmail(e){
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const size = document.getElementById("size").value;
+      const finish = document.getElementById("finish").value;
+      const location = document.getElementById("location").value.trim();
+      const notes = document.getElementById("notes").value.trim();
+
+      const to = "YOUR_EMAIL_HERE"; // <-- change this to your email
+      const subject = encodeURIComponent(`Quote request — ${size} — ${finish}`);
+      const body = encodeURIComponent(
+`Name: ${name}
+Email: ${email}
+Size: ${size}
+Finish: ${finish}
+Location: ${location}
+
+Notes:
+${notes}
+`);
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+      return false;
+    }
+  </script>
+</body>
+</html>
